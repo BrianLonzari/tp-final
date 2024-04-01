@@ -16,41 +16,36 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
-    cursor :url(img/pngwing.com.png), auto;
-    scroll-behavior: smooth;
-}
 
-/* nav */
 nav{
-color: black;
+    color: black;
+    .logo{
+        float: left;
+        span{
+        color: #0471a6;    
+    }
+    .imgNav{
+        width: 50px;
+        height: 50px;
+    }
+    }
 }
 
-.logo{
-    float: left;
-}
-.logo span{
-    color: #0471a6;
-}
-
-.imgNav{
-    width: 50px;
-    height: 50px;
-}
-/* fin nav */
 main {
     height:100%;
     width: 100%;
     background-color: #fff;
-    background-image: url(img/backgrounfutbol.jpg);
+    background-image: url(/img/backgrounfutbol.jpg);
     text-align: center;
     align-items: center;
 }
 
-/* index */
+.tituloPrincipal{
+    color: #fff;
+    font-size:  70PX;
+    padding: 20px;
+}
 
-/* fin de index */
-/* equipos */
 .divPrincipal {
     width: 600px;
     height: 300px;
@@ -63,7 +58,10 @@ main {
     align-items: center;
     cursor: pointer;
     transition: transform 0.4s ease-in-out;
-
+    
+    h2{
+        font-size: 60px;
+    }
 }
 
 .divPrincipal:hover{
@@ -71,56 +69,30 @@ main {
     box-shadow: 0px 0px 5px 5px #fff;
 
 }
-.divPrincipal h2{
-    font-size: 60px;
-}
 
-
-.tituloPrincipal{
-    color: #fff;
-    font-size:  70PX;
-    padding: 20px;
-}
-/* fin equipos */
-/* estadios */
-.cajaEstadios{
-    padding: 20px;
-    margin-top: 10px;
-}
-.cardEstaios{
-    padding: 20px;
-
-}
-
-
-/* fin estadios */
-/* footer */
 footer{
     background-color: #fff;
     color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 30px;
-}
-footer p{
-    margin-bottom: 20px;
+    p{
+        margin-bottom: 20px;
+        color: black;
+    
+    }
+    .redes{
+        a{
+            text-decoration: none;
+        }
+        i{
+            color: black;
+            font-size: 50px;
+            letter-spacing: 30px;
+        }
+    }
 }
 
-footer .redes a{
-    text-decoration: none;
-}
-
-footer .redes i{
-    color: black;
-    font-size: 50px;
-    letter-spacing: 30px;
-}
-
-p{
-    color: black;
-}
-/* fin footer */
-/* boton subir */
 .subir{
     height: 40px;
     width: 40px;
@@ -135,8 +107,6 @@ p{
     border-radius: 50%;
     box-shadow: 0px 0px 5px 5px #fff;
 }
-/* fin boton subir */
-
 
 h2{
     font-family: fuente;
@@ -144,3 +114,7 @@ h2{
     color: #000;
 }
 
+a{
+    outline: none;
+    text-decoration: none;
+}
